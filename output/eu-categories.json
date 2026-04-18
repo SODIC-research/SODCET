@@ -1,0 +1,46 @@
+{
+  "statistics": {
+    "generatedAt": "2025-12-14T21:00:35.045Z",
+    "affiliate": "TU Chemnitz - Professorship Data Management",
+    "contributorCatalogVersion": "20241211-0",
+    "sources": {
+      "conceptScheme": "https://op.europa.eu/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme",
+      "sparqlEndpoint": "https://publications.europa.eu/webapi/rdf/sparql",
+      "opportalRdfApi": "https://op.europa.eu/o/opportal-service/datasets/data-theme?type=SKOS&format=application/rdf+xml",
+      "datasetRdf": "http://publications.europa.eu/resource/authority/data-theme",
+      "datasetTurtle": "http://publications.europa.eu/resource/authority/data-theme?format=text/turtle"
+    }
+  },
+  "categoriesDe": [
+    "Bevölkerung und Gesellschaft",
+    "Bildung, Kultur und Sport",
+    "Energie",
+    "Gesundheit",
+    "Internationale Themen",
+    "Justiz, Rechtssystem und öffentliche Sicherheit",
+    "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+    "Regierung und öffentlicher Sektor",
+    "Regionen und Städte",
+    "Umwelt",
+    "Verkehr",
+    "Vorläufige Daten",
+    "Wirtschaft und Finanzen",
+    "Wissenschaft und Technologie"
+  ],
+  "categoriesEn": [
+    "Agriculture, fisheries, forestry and food",
+    "Economy and finance",
+    "Education, culture and sport",
+    "Energy",
+    "Environment",
+    "Government and public sector",
+    "Health",
+    "International issues",
+    "Justice, legal system and public safety",
+    "Population and society",
+    "Provisional data",
+    "Regions and cities",
+    "Science and technology",
+    "Transport"
+  ]
+}

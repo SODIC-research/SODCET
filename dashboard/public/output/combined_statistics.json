@@ -1,0 +1,1312 @@
+{
+  "statistics": {
+    "createdAt": "2025-12-12T23:42:46.331584",
+    "usedSoftware": [
+      "SODMET (Semantic Open Data Metadata Extraction Tool — umbrella framework)",
+      "GovDataScraperTool (Scrapes govdata.de categories with Selenium)",
+      "ByDataScraperTool (Scrapes bydata.de scrollable category panel)",
+      "BerlinMetaParser (Parses daten.berlin.de categories with BeautifulSoup & Selenium)",
+      "CKANMetaFetcher (Fetches CKAN metadata from daten-bw.de API)",
+      "NRWCategoryExtractor (Scrapes open.nrw category data with Selenium & BS4)",
+      "RLPThemenFetcher (Extracts open.rlp.de thematic data dynamically)"
+    ],
+    "affiliate": "TU Chemnitz - Professorship Data Management",
+    "datasetSources": [
+      "https://open.bydata.de/datasets?locale=de&page=1&limit=10",
+      "https://daten.berlin.de/datensaetze",
+      "https://www.govdata.de/suche?q=brandenburg",
+      "https://www.govdata.de/suche?q=bremen",
+      "https://www.daten-bw.de/ckan/api/3/action/group_list",
+      "https://www.govdata.de/suche?q=Hamburg&sort=relevance_desc&type=all",
+      "https://www.govdata.de/suche?q=hessen",
+      "https://www.govdata.de/suche?q=lower+saxony",
+      "https://www.govdata.de/suche?q=Mecklenburg-Vorpommern",
+      "https://open.nrw/suche?volltext=&page=1",
+      "https://open.rlp.de/de/suchergebnisse",
+      "https://www.govdata.de/suche?q=saarland&sort=relevance_desc&type=all",
+      "https://www.govdata.de/suche?q=Saxony-Anhalt",
+      "https://www.govdata.de/suche?q=Sachsen",
+      "https://www.govdata.de/suche?q=Schleswig-Holstein",
+      "https://www.govdata.de/suche?q=thuringia&sort=relevance_desc&type=all"
+    ],
+    "category_usage_counts": {
+      "Bevölkerung und Gesellschaft": 12,
+      "Bildung, Kultur und Sport": 12,
+      "Energie": 12,
+      "Gesundheit": 13,
+      "Internationale Themen": 5,
+      "Justiz, Rechtssystem und öffentliche Sicherheit": 12,
+      "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel": 14,
+      "Regierung und öffentlicher Sektor": 13,
+      "Regionen und Städte": 15,
+      "Umwelt": 15,
+      "Verkehr": 14,
+      "Wirtschaft und Finanzen": 12,
+      "Wissenschaft und Technologie": 15,
+      "Geographie und Stadtplanung": 1,
+      "Ver- und Entsorgung": 1,
+      "Demographie": 1,
+      "Öffentliche Verwaltung, Haushalt und Steuern": 1,
+      "Wirtschaft": 1,
+      "Bildung": 1,
+      "Wahlen": 1,
+      "Arbeitsmarkt": 1,
+      "Mobilität / Verkehr": 1
+    },
+    "most_used_categories (≥13)": {
+      "Gesundheit": 13,
+      "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel": 14,
+      "Regierung und öffentlicher Sektor": 13,
+      "Regionen und Städte": 15,
+      "Umwelt": 15,
+      "Verkehr": 14,
+      "Wissenschaft und Technologie": 15
+    },
+    "least_used_categories (≤2)": {
+      "Geographie und Stadtplanung": 1,
+      "Ver- und Entsorgung": 1,
+      "Demographie": 1,
+      "Öffentliche Verwaltung, Haushalt und Steuern": 1,
+      "Wirtschaft": 1,
+      "Bildung": 1,
+      "Wahlen": 1,
+      "Arbeitsmarkt": 1,
+      "Mobilität / Verkehr": 1
+    },
+    "common_categories": [],
+    "category_distribution_by_state": {
+      "Regierung und öffentlicher Sektor": {
+        "count": 13,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen",
+          "Sachsen-Anhalt"
+        ]
+      },
+      "Ver- und Entsorgung": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Mobilität / Verkehr": {
+        "count": 1,
+        "present_In": [
+          "Baden-Württemberg"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Berlin",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Justiz, Rechtssystem und öffentliche Sicherheit": {
+        "count": 12,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Niedersachsen"
+        ]
+      },
+      "Bildung": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Verkehr": {
+        "count": 14,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Berlin",
+          "Sachsen",
+          "Sachsen-Anhalt",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Thüringen",
+          "Baden-Württemberg"
+        ]
+      },
+      "Wirtschaft und Finanzen": {
+        "count": 12,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Niedersachsen"
+        ]
+      },
+      "Wissenschaft und Technologie": {
+        "count": 15,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin"
+        ]
+      },
+      "Bildung, Kultur und Sport": {
+        "count": 12,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Niedersachsen"
+        ]
+      },
+      "Öffentliche Verwaltung, Haushalt und Steuern": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Energie": {
+        "count": 12,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Niedersachsen"
+        ]
+      },
+      "Regionen und Städte": {
+        "count": 15,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin"
+        ]
+      },
+      "Demographie": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Internationale Themen": {
+        "count": 5,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Baden-Württemberg",
+          "Nordrhein-Westfalen",
+          "Schleswig-Holstein"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Bayern",
+          "Bremen",
+          "Hessen",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Wirtschaft": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Geographie und Stadtplanung": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Umwelt": {
+        "count": 15,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin"
+        ]
+      },
+      "Wahlen": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Arbeitsmarkt": {
+        "count": 1,
+        "present_In": [
+          "Berlin"
+        ],
+        "missing_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ]
+      },
+      "Gesundheit": {
+        "count": 13,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Berlin",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Niedersachsen"
+        ]
+      },
+      "Bevölkerung und Gesellschaft": {
+        "count": 12,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen",
+          "Sachsen-Anhalt",
+          "Niedersachsen"
+        ]
+      },
+      "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel": {
+        "count": 14,
+        "present_In": [
+          "Hamburg",
+          "Rheinland-Pfalz",
+          "Sachsen",
+          "Sachsen-Anhalt",
+          "Baden-Württemberg",
+          "Bayern",
+          "Bremen",
+          "Nordrhein-Westfalen",
+          "Hessen",
+          "Schleswig-Holstein",
+          "Brandenburg",
+          "Mecklenburg-Vorpommern",
+          "Niedersachsen",
+          "Saarland"
+        ],
+        "missing_In": [
+          "Berlin",
+          "Thüringen"
+        ]
+      }
+    }
+  },
+  "States_categories": {
+    "Hamburg": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 11575
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 2893
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 196
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 97
+      },
+      {
+        "category": "Internationale Themen",
+        "datasetCount": 194
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 55
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 2554
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 225
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 3598
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 898
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 1221
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 4927
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 154
+      }
+    ],
+    "Rheinland-Pfalz": [
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 17668
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 16322
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 3657
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 3001
+      },
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 2580
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 2313
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 2253
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 1577
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 1569
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 1239
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 1041
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 856
+      },
+      {
+        "category": "Internationale Themen",
+        "datasetCount": 843
+      }
+    ],
+    "Berlin": [
+      {
+        "category": "Geographie und Stadtplanung",
+        "datasetCount": 1715
+      },
+      {
+        "category": "Ver- und Entsorgung",
+        "datasetCount": 348
+      },
+      {
+        "category": "Demographie",
+        "datasetCount": 127
+      },
+      {
+        "category": "Öffentliche Verwaltung, Haushalt und Steuern",
+        "datasetCount": 103
+      },
+      {
+        "category": "Wirtschaft",
+        "datasetCount": 61
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 51
+      },
+      {
+        "category": "Bildung",
+        "datasetCount": 41
+      },
+      {
+        "category": "Wahlen",
+        "datasetCount": 37
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 25
+      },
+      {
+        "category": "Arbeitsmarkt",
+        "datasetCount": 24
+      }
+    ],
+    "Sachsen": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 642
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 214
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 47
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 154
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 106
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 495
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 882
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 1160
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 1716
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 560
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 1407
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 883
+      }
+    ],
+    "Thüringen": [
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 1
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 1
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 1
+      }
+    ],
+    "Sachsen-Anhalt": [
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 1
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 1
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 4
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 1
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 1
+      }
+    ],
+    "Baden-Württemberg": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 190
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 66
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 19
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 14
+      },
+      {
+        "category": "Internationale Themen",
+        "datasetCount": 2
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 8
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 83
+      },
+      {
+        "category": "Mobilität / Verkehr",
+        "datasetCount": 152
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 972
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 997
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 236
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 47
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 111
+      }
+    ],
+    "Bayern": [
+      {
+        "category": "Umwelt",
+        "datasetCount": 7390
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 6938
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 3953
+      },
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 3471
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 2861
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 1685
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 688
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 644
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 175
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 146
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 19
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 13
+      }
+    ],
+    "Bremen": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 323
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 133
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 4
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 50
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 59
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 32
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 274
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 239
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 459
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 133
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 515
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 196
+      }
+    ],
+    "Nordrhein-Westfalen": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 2989
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 2587
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 1882
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 1422
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 1253
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 1244
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 1022
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 703
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 586
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 293
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 197
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 102
+      },
+      {
+        "category": "Internationale Themen",
+        "datasetCount": 7
+      }
+    ],
+    "Hessen": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 276
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 123
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 20
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 30
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 43
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 68
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 159
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 143
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 183
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 64
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 374
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 164
+      }
+    ],
+    "Schleswig-Holstein": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 11605
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 1281
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 285
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 1635
+      },
+      {
+        "category": "Internationale Themen",
+        "datasetCount": 237
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 177
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 3540
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 502
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 1585
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 3559
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 1720
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 4854
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 1280
+      }
+    ],
+    "Brandenburg": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 424
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 141
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 38
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 54
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 42
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 9197
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 9593
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 9627
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 9631
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 194
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 554
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 9489
+      }
+    ],
+    "Mecklenburg-Vorpommern": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 301
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 119
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 15
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 31
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 46
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 109
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 141
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 183
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 192
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 155
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 456
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 102
+      }
+    ],
+    "Niedersachsen": [
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 141
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 1
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 116
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 169
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 155
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 12
+      }
+    ],
+    "Saarland": [
+      {
+        "category": "Bevölkerung und Gesellschaft",
+        "datasetCount": 273
+      },
+      {
+        "category": "Bildung, Kultur und Sport",
+        "datasetCount": 117
+      },
+      {
+        "category": "Energie",
+        "datasetCount": 31
+      },
+      {
+        "category": "Gesundheit",
+        "datasetCount": 30
+      },
+      {
+        "category": "Justiz, Rechtssystem und öffentliche Sicherheit",
+        "datasetCount": 42
+      },
+      {
+        "category": "Landwirtschaft, Fischerei, Forstwirtschaft und Nahrungsmittel",
+        "datasetCount": 52
+      },
+      {
+        "category": "Regierung und öffentlicher Sektor",
+        "datasetCount": 283
+      },
+      {
+        "category": "Regionen und Städte",
+        "datasetCount": 275
+      },
+      {
+        "category": "Umwelt",
+        "datasetCount": 261
+      },
+      {
+        "category": "Verkehr",
+        "datasetCount": 104
+      },
+      {
+        "category": "Wirtschaft und Finanzen",
+        "datasetCount": 445
+      },
+      {
+        "category": "Wissenschaft und Technologie",
+        "datasetCount": 205
+      }
+    ]
+  }
+}
